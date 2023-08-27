@@ -1,0 +1,27 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div style="display: flex; justify-content: center;">
+        <button id="button">Click Me</button>
+        <div id="clicked" style="border: solid black 2px; width: 10%; height: 5%;"></div>
+
+    </div>
+    <script>
+        const Button = document.getElementById("button");
+        const output = document.getElementById("clicked");
+
+        Button.addEventListener("click", () => {
+            output.textContent = "Button Clicked!";
+        });
+    </script>
+
+</body>
+
+</html>

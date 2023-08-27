@@ -1,0 +1,30 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="display: flex; justify-content: center;">
+        <button id="add">Button</button>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <div id="container"></div>
+    </div>
+
+    <script>
+        const addButton = document.getElementById("add");
+        const Container = document.getElementById("container");
+
+        addButton.addEventListener("click", () => {
+            const newText = document.createElement("p");
+            newText.textContent = "Hello Dom!";
+            Container.appendChild(newText);
+        });
+    </script>
+
+</body>
+
+</html>

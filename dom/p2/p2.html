@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <ul id="list">
+    <li style="margin-top: 4%;">item1</li>
+    <li style="margin-top: 4%;">item2</li>
+    <li style="margin-top: 4%;">item3</li>
+    <li style="margin-top: 4%;">item4</li>
+
+  </ul>
+
+  <script>
+    const list = document.getElementById('list');
+
+    const changeColour = () => {
+      if (
+        each.target.style.backgroundColor === 'grey'
+      ) {
+        each.target.style.backgroundColor = '';
+      } else {
+        each.target.style.backgroundColor = 'grey';
+      }
+    }
+
+    list.addEventListener('click', (each) => {
+      if (
+        each.target.style.backgroundColor === 'grey'
+      ) {
+        each.target.style.backgroundColor = '';
+      } else {
+        each.target.style.backgroundColor = 'grey';
+      }
+
+    });
+
+  </script>
+
+</body>
+
+</html>

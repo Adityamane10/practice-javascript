@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="display: flex; justify-content: center; margin-top: 10%;">
+        <button id="hide">Hide</button>
+    </div>
+    <div id="par"
+        style="display: flex; justify-content: center; margin-left: 20%; margin-right: 20%; background-color: rgb(127, 98, 98);">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse consequatur quisquam quam voluptatibus
+            obcaecati sunt maiores? Assumenda vitae nihil fugiat quo eveniet atque, dicta mollitia ab perferendis iure
+            labore, ea, iusto doloribus voluptates ullam debitis? Totam sequi dolorum asperiores repellat nam voluptas
+            consectetur, unde nesciunt beatae maxime rerum? Obcaecati molestiae perferendis, rerum et, aliquid quibusdam
+            assumenda magni illum dolore eius cum id dolorum neque, perspiciatis corrupti. Nesciunt veniam a
+            reprehenderit deleniti, officia perspiciatis est aliquam doloribus omnis odit consectetur natus voluptatibus
+            rem recusandae amet, atque corporis sunt culpa quos dolorem unde temporibus pariatur! Totam enim aliquid
+            sequi nobis, maiores amet?</p>
+    </div>
+    <script>
+        const button = document.getElementById('hide')
+        const paragraph = document.getElementById('par')
+
+
+        const hide = () => {
+            if (
+                paragraph.style.display === 'none'
+            ) {
+                paragraph.style.display = 'block'
+            } else {
+                paragraph.style.display = 'none';
+            }
+        }
+
+        button.addEventListener('click', hide)
+    </script>
+</body>
+
+</html>

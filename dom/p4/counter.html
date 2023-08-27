@@ -1,0 +1,31 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="display: flex; justify-content: center;">
+        <span id="counter">0</span>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <button id="increament">Increment</button>
+    </div>
+
+    <script>
+        const counter = document.getElementById("counter");
+        const increament = document.getElementById("increament");
+
+        let count = 0;
+
+        increament.addEventListener("click", () => {
+            count++;
+            counter.textContent = count;
+        });
+    </script>
+
+</body>
+
+</html>
